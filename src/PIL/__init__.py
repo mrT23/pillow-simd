@@ -18,7 +18,8 @@ from . import _version
 # VERSION was removed in Pillow 6.0.0.
 # PILLOW_VERSION was removed in Pillow 7.0.0.
 # Use __version__ instead.
-__version__ = _version.__version__
+#__version__ = _version.__version__
+PILLOW_VERSION = __version__ = _version.__version__
 
 del _version
 
