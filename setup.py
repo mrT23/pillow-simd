@@ -27,7 +27,7 @@ def get_version():
     return locals()["__version__"]
 
 
-NAME = "Pillow-SIMD"
+NAME = "Pillow"
 PILLOW_VERSION = get_version()
 FREETYPE_ROOT = None
 IMAGEQUANT_ROOT = None
