@@ -41,7 +41,7 @@ from pathlib import Path
 # VERSION was removed in Pillow 6.0.0.
 # PILLOW_VERSION was removed in Pillow 7.0.0.
 # Use __version__ instead.
-from . import ImageMode, TiffTags, UnidentifiedImageError, __version__, _plugins, PILLOW_VERSION
+from . import ImageMode, TiffTags, UnidentifiedImageError, __version__, _plugins
 from ._binary import i8, i32le
 from ._util import deferred_error, isPath
 
@@ -58,7 +58,7 @@ class DecompressionBombError(Exception):
 
 # Limit to around a quarter gigabyte for a 24 bit (3 bpp) image
 MAX_IMAGE_PIXELS = int(1024 * 1024 * 1024 // 4 // 3)
-
+PILLOW_VERSION = "7.0.2"
 
 try:
     # If the _imaging C module is not present, Pillow will not load.
